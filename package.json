@@ -1,0 +1,16 @@
+{
+  "name": "axios-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "vue": "^2.6.11",
+    "vuex": "^3.4.0"
+  }
+}
