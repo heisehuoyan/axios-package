@@ -1,7 +1,9 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import * as Types from "@/store/action-types";
+import * as Types from "../store/action-types";
+import modules from "./modules/index";
 Vue.use(Vuex);
+
 const store = new Vuex.Store({
   state: {
     // 公共的状态
@@ -16,6 +18,9 @@ const store = new Vuex.Store({
       state.tokens.forEach((token) => token()); // 执行所有的取消方法，都调用一下
       state.tokens = []; // 清空列表
     },
+  },
+  modules: {
+    ...modules,
   },
 });
 window.store = store;
